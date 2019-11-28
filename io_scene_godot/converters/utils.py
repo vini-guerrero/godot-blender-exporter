@@ -40,7 +40,7 @@ def triangulate_mesh(mesh):
     tri_mesh.to_mesh(mesh)
     tri_mesh.free()
 
-    mesh.update(calc_loop_triangles=True)
+    mesh.update(calc_edges=True, calc_edges_loose=True)
 
 
 class MeshResourceKey:
